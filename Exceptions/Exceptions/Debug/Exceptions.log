@@ -1,0 +1,3 @@
+﻿  Questionaire.cpp
+C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Exceptions\Questionaire.cpp(71,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+  Exceptions.vcxproj -> C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Debug\Exceptions.exe
