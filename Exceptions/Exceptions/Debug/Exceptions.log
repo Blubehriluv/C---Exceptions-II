@@ -1,3 +1,4 @@
 ﻿  Questionaire.cpp
-C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Exceptions\Questionaire.cpp(71,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
-  Exceptions.vcxproj -> C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Debug\Exceptions.exe
+C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Exceptions\Questionaire.cpp(37,23): error C3867:  'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Exceptions\Questionaire.cpp(37,23): error C2296:  '>': illegal, left operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'
+C:\Users\taymcken\Documents\GitHub\C---Exceptions-II\Exceptions\Exceptions\Questionaire.cpp(37,23): error C2297:  '>': illegal, right operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'

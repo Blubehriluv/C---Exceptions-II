@@ -21,8 +21,45 @@ void QuestionThree()
 
 void QuestionTwo()
 {
+	char* playerChar;
+	
+	cout << "" << endl;
 	cout << "This is question two." << endl;
-	system("Pause");
+	cout << "What letter does your last name start with?" << endl;
+	cin >> playerChar;
+	
+	try
+	{
+		//The user's input is passed to a string for testing to make sure it's only a character
+		string tester;
+		tester = *playerChar;
+
+		if(tester.length > 0)
+		{
+			cout << tester << " is not a char." << endl;
+			cout << "TOO MANY LETTERS." << endl;
+			throw playerChar;
+		}
+			
+		if (*playerChar == 'm')
+		{
+			cout << "Our last names begin with the same letter." << endl;
+			cout << "On to the next question." << endl;
+			system("Pause");
+		}
+		
+		else if (isalpha(*playerChar))
+		{
+			cout << "Nice! " << playerChar << " is an interesting letter!" << endl;
+			system("Pause");
+		}
+	}
+	catch (string e)
+	{
+		cout << "I only asked for one letter :)" << endl;
+		cout << "Try again!" << endl;
+		QuestionTwo();		
+	}
 }
 
 void QuestionOne()
@@ -84,7 +121,7 @@ void Introduction()
 	QuestionOne();
 }
 
-void main()
+int main()
 {
 	string playerName;
 	cout << "Enter your name!" << endl;
