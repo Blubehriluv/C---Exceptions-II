@@ -21,7 +21,7 @@ void QuestionThree()
 
 void QuestionTwo()
 {
-	char* playerChar;
+	char playerChar[] = "";
 	
 	cout << "" << endl;
 	cout << "This is question two." << endl;
@@ -31,17 +31,18 @@ void QuestionTwo()
 	try
 	{
 		//The user's input is passed to a string for testing to make sure it's only a character
-		string tester;
-		tester = *playerChar;
+		string tester = playerChar;
+		//tester = *playerChar;
 
 		if(tester.length > 0)
 		{
 			cout << tester << " is not a char." << endl;
 			cout << "TOO MANY LETTERS." << endl;
-			throw playerChar;
+			//throw playerChar;
+			system("Pause");
 		}
 			
-		if (*playerChar == 'm')
+		else if (tester == "m")
 		{
 			cout << "Our last names begin with the same letter." << endl;
 			cout << "On to the next question." << endl;
